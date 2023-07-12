@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "paths": {
+    "/action/toggleoutput": {
+      "name": "/action/toggleoutput",
+      "lambdaFunction": "toggleOutput",
+      "permissions": {
+        "setting": "open"
+      }
+    },
+    "/action/lockstatus": {
+      "name": "/action/lockstatus",
+      "lambdaFunction": "lockStatus",
+      "permissions": {
+        "setting": "open"
+      }
+    },
+    "/config/updatedevice": {
+      "name": "/config/updatedevice",
+      "lambdaFunction": "updateDevice",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

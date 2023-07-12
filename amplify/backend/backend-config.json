@@ -1,4 +1,36 @@
 {
+  "api": {
+    "api74cc19aa": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "toggleOutput"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "lockStatus"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "updateDevice"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
   "auth": {
     "eacuidc095c50": {
       "customAuth": false,
@@ -25,6 +57,94 @@
       },
       "providerPlugin": "awscloudformation",
       "service": "Cognito"
+    }
+  },
+  "function": {
+    "lockStatus": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "requestAccess": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "toggleOutput": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "updateDevice": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_lockStatus_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "lockStatus"
+        }
+      ]
+    },
+    "AMPLIFY_function_lockStatus_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "lockStatus"
+        }
+      ]
+    },
+    "AMPLIFY_function_requestAccess_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "requestAccess"
+        }
+      ]
+    },
+    "AMPLIFY_function_requestAccess_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "requestAccess"
+        }
+      ]
+    },
+    "AMPLIFY_function_toggleOutput_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "toggleOutput"
+        }
+      ]
+    },
+    "AMPLIFY_function_toggleOutput_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "toggleOutput"
+        }
+      ]
+    },
+    "AMPLIFY_function_updateDevice_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "updateDevice"
+        }
+      ]
+    },
+    "AMPLIFY_function_updateDevice_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "updateDevice"
+        }
+      ]
     }
   }
 }

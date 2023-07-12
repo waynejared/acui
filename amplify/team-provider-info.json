@@ -14,6 +14,27 @@
     "categories": {
       "auth": {
         "eacuidc095c50": {}
+      },
+      "function": {
+        "lockStatus": {
+          "deploymentBucketName": "amplify-amplify9b6f6a48760d4-staging-15358-deployment",
+          "s3Key": "amplify-builds/lockStatus-62414879413255525870-build.zip"
+        },
+        "requestAccess": {
+          "deploymentBucketName": "amplify-amplify9b6f6a48760d4-staging-15358-deployment",
+          "s3Key": "amplify-builds/requestAccess-49723143705531454a56-build.zip"
+        },
+        "toggleOutput": {
+          "deploymentBucketName": "amplify-amplify9b6f6a48760d4-staging-15358-deployment",
+          "s3Key": "amplify-builds/toggleOutput-584569696b6f424f6649-build.zip"
+        },
+        "updateDevice": {
+          "deploymentBucketName": "amplify-amplify9b6f6a48760d4-staging-15358-deployment",
+          "s3Key": "amplify-builds/updateDevice-4c4a6f4f4332682f6152-build.zip"
+        }
+      },
+      "api": {
+        "api74cc19aa": {}
       }
     }
   }
