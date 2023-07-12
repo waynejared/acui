@@ -1,0 +1,11 @@
+go 1.20
+
+use (
+ ./amplify/backend/function/lockStatus/src
+ ./amplify/backend/function/requestAccess/src
+ ./amplify/backend/function/toggleOutput/src
+ ./amplify/backend/function/updateDevice/src
+ ./amplify/backend/function/common
+ )
+ 
+ 

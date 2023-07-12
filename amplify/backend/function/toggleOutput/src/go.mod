@@ -1,4 +1,4 @@
-module lambda
+module github.com/waynejared/eac_ui/amplify/backend/function/toggleOutput/src
 
 go 1.20
 

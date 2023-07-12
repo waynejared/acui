@@ -1,4 +1,4 @@
-module lambda
+module github.com/waynejared/eac_ui/amplify/backend/function/requestAccess/src
 
 go 1.20
 
